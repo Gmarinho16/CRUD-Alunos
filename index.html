@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap"
+  />
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Alunos</title>
+  </head>
+  <body>
+    <h1>Gerenciamento de Alunos</h1>
+
+    <!-- Formulário para Criar/Atualizar Usuário -->
+    <form id="userForm">
+      <input type="hidden" id="userId" />
+      <input
+        type="text"
+        id="userName"
+        placeholder="Nome do Aluno(a)"
+        required
+      />
+      <input type="text" id="userAge" placeholder="Curso" required />
+      <button type="submit">Salvar</button>
+      <button type="button" id="cancelButton" style="display: none">
+        Cancelar
+      </button>
+    </form>
+
+    <!-- Tabela de Exibição de Usuários -->
+    <h2>Lista de Nomes</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Curso</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="userTableBody">
+        <!-- Usuários serão adicionados aqui dinamicamente -->
+      </tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
